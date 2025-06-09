@@ -2,7 +2,7 @@
 fileWatcherType = "none"
 
 [global]
-developmentMode = False
+developmentMode = false
 
 [runner]
-fastReruns = False
+fastReruns = false
