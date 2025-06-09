@@ -139,11 +139,11 @@ The application follows a modular architecture with three main components:
 
 ### Models Used
 
-- **Base Model**: [`Jzuluaga/accent-id-commonaccent_xlsr-en-english`](https://huggingface.co/Jzuluaga/accent-id-commonaccent_xlsr-en-english)
-- **Architecture**: Wav2Vec2 with custom classification head
+- **Base Model**: [`Jzuluaga/accent-id-commonaccent_ecapa`](https://huggingface.co/Jzuluaga/accent-id-commonaccent_ecapa)
+- **Architecture**: ECAPA-TDNN architecture
 - **Training Data**: CommonAccent dataset with English varieties
 - **Supported Accents**: American, British, Australian, Canadian, Indian, and more.
-- **Brief Description**: The model is a finetuned version of SpeechBrain's [`lang-id-commonlanguage_ecapa`](https://huggingface.co/speechbrain/lang-id-commonlanguage_ecapa). It was finetuned to recognize various English accents. Further finetuning might be needed for production or using a different and more accurate model for production.
+- **Brief Description**: The model is a finetuned version of SpeechBrain's [`spkrec-ecapa-voxceleb (VoxCeleb)`](https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb). It was finetuned to recognize various English accents. Further finetuning might be needed for production or using a different and more accurate model for production.
 
 ### Performance Optimizations
 
