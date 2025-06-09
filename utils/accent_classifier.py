@@ -1,4 +1,3 @@
-from speechbrain.pretrained.interfaces import foreign_class
 from speechbrain.pretrained import EncoderClassifier
 
 ACCENT_MAPPING = {
@@ -23,11 +22,6 @@ ACCENT_MAPPING = {
 class AccentClassifier:
     def __init__(self):
         # English accent classification model from SpeechBrain
-        """self.classifier = foreign_class(
-            source="Jzuluaga/accent-id-commonaccent_xlsr-en-english", 
-            pymodule_file="custom_interface.py", 
-            classname="CustomEncoderWav2vec2Classifier"
-        )"""
 
         self.classifier = EncoderClassifier.from_hparams(
             source="Jzuluaga/accent-id-commonaccent_ecapa",

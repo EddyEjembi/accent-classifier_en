@@ -30,15 +30,15 @@ def main():
             
         try:
             with st.spinner("Processing video..."):
-                # Step 1: Download video
+                # Download video
                 st.info("📥 Downloading video...")
                 audio_path = models['video_processor'].download_video(video_url)
                 
-                # Step 2: Process audio
+                # Process audio
                 st.info("🎵 Processing audio...")
                 processed_audio = models['audio_extractor'].process_audio(audio_path)
-                
-                # Step 3: Classify accent
+
+                # Classify accent
                 st.info("🔍 Classifying accent...")
                 result = models['accent_classifier'].classify_accent(processed_audio)
                 
@@ -66,7 +66,9 @@ def main():
     st.markdown("[GitHub Repository](https://github.com/EddyEjembi/accent-classifier_en)")
 
 def cleanup_files(file_paths):
-    """Remove temporary files"""
+    """
+    Remove temporary files
+    """
     for path in file_paths:
         try:
             if os.path.exists(path):
